@@ -115,6 +115,10 @@ function animation1 (){
     cube1.material.transparent = true;
     cube1.material.opacity = 0.5;
     cube1.material.color = new THREE.Color(Math.random() * 0xffffff)
+
+    cube2.material.transparent = true;
+    cube2.material.opacity = 0.5;
+    cube2.material.color = new THREE.Color(Math.random() * 0xffffff)
 }
 
 
