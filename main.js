@@ -41,7 +41,7 @@ var Material1 = new THREE.MeshPhongMaterial( {color: "#92ABEA" });
 var Material2 = new THREE.MeshPhongMaterial( {color: "#E86262" });
 let cube1 = new THREE.Mesh(Cube, Material1)
 cube1.position.set(3,0,0);
-cube1.castshadow = true;
+cube1.castShadow = true;
 
 //Cube 1 Bounding box
 let cube1BB = new THREE.Box3(new THREE.Vector3, new THREE.Vector3());
@@ -49,7 +49,7 @@ cube1BB.setFromObject(cube1)
 //Cube 2 - Player Cube
 let cube2 = new THREE.Mesh(Cube, Material2)
 cube2.position.set(-3,0,0);
-cube2.castshadow = true
+cube2.castShadow = true
 //Cube 2 Bounding box
 let cube2BB = new THREE.Box3(new THREE.Vector3, new THREE.Vector3());
 cube2BB.setFromObject(cube2)
