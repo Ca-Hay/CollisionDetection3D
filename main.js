@@ -1,4 +1,3 @@
-import { FontLoader } from "three";
 import * as THREE from "./node_modules/three/build/three.module.js"
 //SCENE
 let scene = new THREE.Scene();
@@ -113,11 +112,6 @@ document.onkeydown = function(e) {
 
 //----------------------------------------------------------------------------
 //TEXT
-const text = "THIS IS TEXT"
-let textmesh;
-
-const loader = new FontLoader();
-loader.load("../fonts/Montserrat_Regular.json")
 //----------------------------------------------------------------------------
 function animation1 (){
     cube1.material.transparent = true;
