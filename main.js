@@ -1,4 +1,5 @@
-import * as THREE from './node_modules/three/build/three.module.js'
+import { FontLoader } from "three";
+import * as THREE from "./node_modules/three/build/three.module.js"
 //SCENE
 let scene = new THREE.Scene();
 //CAMERA
@@ -110,6 +111,13 @@ document.onkeydown = function(e) {
 //Orbit controls exist NO THEY DONT LOL
 //let controls = new OrbitControls ( camera, domElement)
 
+//----------------------------------------------------------------------------
+//TEXT
+const text = "THIS IS TEXT"
+let textmesh;
+
+const loader = new FontLoader();
+loader.load("../fonts/Montserrat_Regular.json")
 //----------------------------------------------------------------------------
 function animation1 (){
     cube1.material.transparent = true;
